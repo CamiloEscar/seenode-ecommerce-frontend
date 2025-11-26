@@ -2,7 +2,8 @@ import Image from "next/image"
 
 export default async function Page() {
 
-  const API = process.env.BACKEND_URL
+  const API = process.env.NEXT_PUBLIC_BACKEND_URL;
+  console.log("API:", API);
 
   const response = await fetch(`${API}/productos`)
 
